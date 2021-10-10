@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_webview.*
 import android.util.Base64
 
-class WebViewActivity: AppCompatActivity() {
+class WebViewActivity : AppCompatActivity() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstance: Bundle?) {
         super.onCreate(savedInstance)
@@ -33,7 +33,10 @@ class WebViewActivity: AppCompatActivity() {
             }
         }
 
+        // Production URL: "https://app.columnapi.com/sdk?params="
+        // Sandbox URL: "https://app-sandbox.columnapi.com/sdk?params="
         columnWebview.loadUrl(
-            "http://10.0.2.2:3001/sdk?params=$params")
+            "https://app-sandbox.columnapi.com/sdk?params=$params"
+        )
     }
 }

@@ -10,7 +10,7 @@ class JavascriptInterface(private val mContext: Context) {
     fun postMessage(payload: String) {
         val response = JSONObject(payload)
 
-        when(response.getString("name")) {
+        when (response.getString("name")) {
             "column-on-close" -> closeWebView()
         }
     }
