@@ -33,10 +33,10 @@ class WebViewActivity : AppCompatActivity() {
             }
         }
 
-        // Production URL: "https://app.columnapi.com/sdk?params="
-        // Sandbox URL: "https://app-sandbox.columnapi.com/sdk?params="
+        // Production URL: "https://app.columnapi.com/tax-filing?params="
+        // Sandbox URL: "https://app-sandbox.columnapi.com/tax-filing?params="
         columnWebview.loadUrl(
-            "https://app-sandbox.columnapi.com/sdk?params=$params"
+            "https://app-sandbox.columnapi.com/tax-filing?params=$params"
         )
     }
 }
