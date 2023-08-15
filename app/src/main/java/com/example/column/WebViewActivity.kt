@@ -42,12 +42,13 @@ class WebViewActivity : AppCompatActivity() {
                 }
 
                 if (!isExternalLink && isAllowedInWebView) {
-                    val intent = Intent(Intent.ACTION_VIEW, uri)
-                    startActivity(intent)
-                    return true;
+                    return super.shouldOverrideUrlLoading(view, request)
                 }
 
-                return super.shouldOverrideUrlLoading(view, request)
+                // Open external link within the browser
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+                return true;
             }
         }
 
