@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
 
     fun launchWebView(view: View) {
         val intent = Intent(applicationContext, WebViewActivity::class.java)
-        intent.putExtra("token", "<user token here>")
+        val url = "<user url>"
+        intent.putExtra("url", url)
         startActivity(intent)
     }
 }
