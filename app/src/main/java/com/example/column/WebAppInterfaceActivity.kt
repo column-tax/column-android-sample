@@ -10,8 +10,10 @@ class JavascriptInterface(private val mContext: Context) {
     fun postMessage(payload: String) {
         val response = JSONObject(payload)
 
-        when (response.getString("name")) {
+        when (val event = response.getString("name")) {
             "column-on-close" -> closeWebView()
+            "column-on-user-event" -> println("Received user event: $response")
+            else -> println("Unrecognized event: $event")
         }
     }
 

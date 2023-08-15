@@ -1,22 +1,20 @@
 package com.example.column
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_webview.*
-import android.util.Base64
 
 class WebViewActivity : AppCompatActivity() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstance: Bundle?) {
         super.onCreate(savedInstance)
 
-        val token = intent.getStringExtra("token")
-        val json = """{"token": "$token"}""".toByteArray()
-        val params = Base64.encodeToString(json, Base64.DEFAULT)
+        val url = intent.getStringExtra("url")!!
 
         setContentView(R.layout.activity_webview)
         columnWebview.settings.javaScriptEnabled = true
@@ -29,14 +27,30 @@ class WebViewActivity : AppCompatActivity() {
                 view: WebView?,
                 request: WebResourceRequest?
             ): Boolean {
+                val uri = request?.url ?: return super.shouldOverrideUrlLoading(view, request)
+
+                val allowedDomains = setOf(
+                    "localhost",
+                    "columnapi.com",
+                    "env.bz"
+                )
+
+                val host = uri.host ?: ""
+                val isExternalLink = uri.queryParameterNames.contains("columntax-external-link")
+                val isAllowedInWebView = allowedDomains.any { domain ->
+                    host == domain || host.endsWith(domain)
+                }
+
+                if (!isExternalLink && isAllowedInWebView) {
+                    val intent = Intent(Intent.ACTION_VIEW, uri)
+                    startActivity(intent)
+                    return true;
+                }
+
                 return super.shouldOverrideUrlLoading(view, request)
             }
         }
 
-        // Production URL: "https://app.columnapi.com/tax-filing?params="
-        // Sandbox URL: "https://app-sandbox.columnapi.com/tax-filing?params="
-        columnWebview.loadUrl(
-            "https://app-sandbox.columnapi.com/tax-filing?params=$params"
-        )
+        columnWebview.loadUrl(url)
     }
 }
