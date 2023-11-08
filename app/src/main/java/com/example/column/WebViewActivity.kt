@@ -54,4 +54,12 @@ class WebViewActivity : AppCompatActivity() {
 
         columnWebview.loadUrl(url)
     }
+
+    override fun onBackPressed() {
+        if (columnWebview.canGoBack()) {
+            columnWebview.goBack()
+        } else {
+            super.onBackPressed()
+        }
+    }
 }
