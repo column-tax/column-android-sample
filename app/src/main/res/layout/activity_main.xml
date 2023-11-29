@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,19 +9,39 @@
     android:paddingRight="10dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="CT Android Tester"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:hint="Paste Column Tax URL here"
+        android:inputType="textMultiLine"
+        android:maxLines="12"
+        android:minHeight="200dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/button"
         android:background="#0070FF"
         android:onClick="launchWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urlEditText"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="Open Column"
-        android:textAllCaps="false"
+        android:text="Open Column URL"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
