@@ -14,3 +14,8 @@ if you don't already have it.
 [the Android docs](https://developer.android.com/studio/run) for more info.
 1. Once your app is up and running, create a new user via the [initialize tax filing endpoint](https://docs.columntax.com/reference/express-initialize-tax-filing)
 1. Pass the `user_url` for the new user to the webview by replacing `"<user url>"` in [MainActivity.kt](https://github.com/column-tax/column-android-sample/blob/main/app/src/main/java/com/example/column/MainActivity.kt#L21)
+
+## Building an APK
+
+1. In Android Studio, go to Build > Build Bundle(s) / APK(s) > Build APK(s)
+1. Navigate to the build directory to find the APK, mine is under: ./app/build/outputs/apk/debug/app-debug.apk
