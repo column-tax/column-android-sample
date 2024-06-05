@@ -8,7 +8,6 @@ the frontend Column Tax SDK Module in Android.
 > [!WARNING]
 > We recommend use of our iOS SDK rather than using this sample app. See our [Mobile SDK Guide](https://docs.columntax.com/reference/mobile-sdk-guide) for more details.
 
-
 ## Getting Started
 
 1. Download and install [Android Studio](https://developer.android.com/studio)
