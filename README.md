@@ -5,9 +5,12 @@ See the full [documentation](https://docs.columntax.com) for more details.
 This is a sample Android app written in Kotlin that shows an example of opening
 the frontend Column Tax SDK Module in Android.
 
+> [!WARNING]
+> We recommend use of our iOS SDK rather than using this sample app. See our [Mobile SDK Guide](https://docs.columntax.com/reference/mobile-sdk-guide) for more details.
+
 ## Getting Started
 
-1. Download and install [Android Studio](https://developer.android.com/studio) 
+1. Download and install [Android Studio](https://developer.android.com/studio)
 if you don't already have it.
 1. Open this project in Android Studio.
 1. Use the built-in tools to make/build and run the app. See
