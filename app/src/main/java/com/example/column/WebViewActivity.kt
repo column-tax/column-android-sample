@@ -104,7 +104,8 @@ class WebViewActivity : AppCompatActivity() {
                     // Open file chooser
                     val intent = Intent(Intent.ACTION_GET_CONTENT)
                     intent.addCategory(Intent.CATEGORY_OPENABLE)
-                    intent.type = "image/*"
+                    intent.type = "*/*"
+                    intent.putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("image/*", "application/pdf"))
                     val chooserIntent = Intent.createChooser(intent, "Choose File")
                     startActivityForResult(chooserIntent, FILE_CHOOSER_REQUEST_CODE)
 
