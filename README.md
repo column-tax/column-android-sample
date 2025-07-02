@@ -6,7 +6,7 @@ This is a sample Android app written in Kotlin that shows an example of opening
 the frontend Column Tax SDK Module in Android.
 
 > [!WARNING]
-> We recommend use of our iOS SDK rather than using this sample app. See our [Mobile SDK Guide](https://docs.columntax.com/reference/mobile-sdk-guide) for more details.
+> We recommend use of our Android SDK rather than using this sample app. See our [Mobile SDK Guide](https://docs.columntax.com/reference/mobile-sdk-guide) for more details.
 
 ## Getting Started
 
