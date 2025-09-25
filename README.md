@@ -1,34 +1,74 @@
-# Column Android SDK Sample App
+# Column Tax Android SDK Sample
 
-A simple Android app that shows how to use the official Column Tax SDK.
+This sample Android app demonstrates how to integrate the official Column Tax Android SDK into your application.
 
-## Setup
+## What this sample does
 
-1. Open this project in Android Studio
-2. Build and run the app
-3. Get a user URL by calling the [initialize tax filing endpoint](https://docs.columntax.com/reference/express-initialize-tax-filing)
-4. Paste the `user_url` into the app and tap "Launch Column Tax SDK"
+- Provides a text input for entering a Column Tax user URL
+- Validates input and enables/disables the launch button dynamically
+- Launches the Column Tax SDK using the official `ColumnTaxFileActivity`
+- Handles the complete tax filing flow through the SDK
 
-## Key Features
+## Getting Started
 
-- Uses the official Column Tax SDK (`com.columntax.columntaxsdk:column-tax-sdk:1.0.0`)
-- Simple interface with URL input and launch button
-- Error handling for SDK launch issues
+### Prerequisites
+- [Android Studio](https://developer.android.com/studio) installed
+- Android device or emulator (API level 21+)
+- Valid Column Tax user URL (see setup step 4)
 
-## Differences from WebView Sample
+### Setup Instructions
 
-Unlike the existing `column-android-sample` which uses a custom WebView, this app uses:
-- `ColumnTaxFileActivity` class from the official SDK
-- No custom file upload handling (handled by SDK)
-- No custom URL routing (handled by SDK)
+1. **Open the project**
+   ```bash
+   # Clone or download this repository
+   # Open in Android Studio
+   ```
 
-## Requirements
+2. **Build and run**
+   - Use Android Studio's built-in tools to build the project
+   - Run on your device or emulator
+   - See [Android documentation](https://developer.android.com/studio/run) for detailed instructions
 
-- Android API 21+
-- Internet permission
-- Valid Column Tax user URL
+3. **Get a user URL**
+   - Call Column Tax's [initialize tax filing endpoint](https://docs.columntax.com/reference/express-initialize-tax-filing)
+   - This will return a `user_url` specific to your user
 
-## Documentation
+4. **Test the integration**
+   - Launch the app
+   - Paste your `user_url` into the text field
+   - Tap "Launch Column Tax SDK"
+   - The Column Tax interface will open within your app
 
-- [Column Mobile SDK Guide](https://docs.columntax.com/reference/mobile-sdk-guide)
+## Technical Details
+
+### SDK Integration
+- **SDK Version**: `com.columntax.columntaxsdk:column-tax-sdk:1.0.2`
+- **Main Class**: `ColumnTaxFileActivity` handles the entire tax filing flow
+- **Architecture**: Simple Activity-based integration with minimal setup
+
+### App Features
+- **Dynamic UI**: Button changes color and state based on URL input
+- **Error Handling**: Graceful handling of SDK launch issues
+- **Modern Android**: Built with AGP 8.13.0, targeting Android API 34
+
+### Requirements
+- **Minimum SDK**: Android API 21 (Android 5.0)
+- **Target SDK**: Android API 34
+- **Permissions**: Internet access for API communication
+- **Dependencies**: AndroidX libraries, Column Tax SDK
+
+## Code Structure
+
+```
+app/src/main/java/com/example/columnsdksample/
+└── MainActivity.kt          # Main app logic and SDK integration
+
+app/src/main/res/
+├── layout/activity_main.xml # Simple UI with URL input and button
+└── values/strings.xml       # App strings
+```
+
+## Support
+
 - [Column Tax Documentation](https://docs.columntax.com)
+- [Mobile SDK Guide](https://docs.columntax.com/reference/mobile-sdk-guide)
