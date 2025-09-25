@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Column Tax SDK Test"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/urlLabel" />
+
+    <TextView
+        android:id="@+id/urlLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Column Tax User URL:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/urlEditText" />
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="https://your-user-url-here.com"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/urlLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/launchButton" />
+
+    <Button
+        android:id="@+id/launchButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Launch Column Tax SDK"
+        android:textSize="18sp"
+        android:minHeight="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/urlEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/instructionsText" />
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Instructions:\n1. Get a user URL by calling the initialize tax filing endpoint\n2. Paste the user_url above\n3. Tap the button to launch the SDK"
+        android:textSize="14sp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:background="@android:color/system_neutral1_50"
+        app:layout_constraintTop_toBottomOf="@+id/launchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

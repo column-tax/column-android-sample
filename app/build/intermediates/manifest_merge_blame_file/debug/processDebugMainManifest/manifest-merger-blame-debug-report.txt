@@ -1,0 +1,139 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.columnsdksample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:5:5-79
+12-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:5:22-76
+13
+14    <permission
+14-->[androidx.core:core:1.13.1] /Users/veronicashei/.gradle/caches/8.13/transforms/3ebd12d8cccfa77212002d65556e7169/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.columnsdksample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.13.1] /Users/veronicashei/.gradle/caches/8.13/transforms/3ebd12d8cccfa77212002d65556e7169/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.13.1] /Users/veronicashei/.gradle/caches/8.13/transforms/3ebd12d8cccfa77212002d65556e7169/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.columnsdksample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.13.1] /Users/veronicashei/.gradle/caches/8.13/transforms/3ebd12d8cccfa77212002d65556e7169/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.13.1] /Users/veronicashei/.gradle/caches/8.13/transforms/3ebd12d8cccfa77212002d65556e7169/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:7:5-22:19
+21        android:allowBackup="true"
+21-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.13.1] /Users/veronicashei/.gradle/caches/8.13/transforms/3ebd12d8cccfa77212002d65556e7169/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="true"
+25        android:icon="@mipmap/ic_launcher"
+25-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:9:9-43
+26        android:label="@string/app_name"
+26-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:10:9-41
+27        android:testOnly="true"
+28        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+28-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:11:9-67
+29        <activity
+29-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:13:9-20:20
+30            android:name="com.example.columnsdksample.MainActivity"
+30-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:14:13-41
+31            android:exported="true" >
+31-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:15:13-36
+32            <intent-filter>
+32-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:16:13-19:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:17:17-69
+33-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:17:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:18:17-77
+35-->/Users/veronicashei/dev/column-android-sdk-sample/app/src/main/AndroidManifest.xml:18:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity android:name="com.columntax.columntaxfile.WebViewActivity" >
+38-->[com.columntax.columntaxsdk:column-tax-sdk:1.0.2] /Users/veronicashei/.gradle/caches/8.13/transforms/f0ed61556d7016d71d26eec6930c5d9c/transformed/jetified-column-tax-sdk-1.0.2/AndroidManifest.xml:8:9-12:20
+38-->[com.columntax.columntaxsdk:column-tax-sdk:1.0.2] /Users/veronicashei/.gradle/caches/8.13/transforms/f0ed61556d7016d71d26eec6930c5d9c/transformed/jetified-column-tax-sdk-1.0.2/AndroidManifest.xml:8:19-77
+39            <meta-data
+39-->[com.columntax.columntaxsdk:column-tax-sdk:1.0.2] /Users/veronicashei/.gradle/caches/8.13/transforms/f0ed61556d7016d71d26eec6930c5d9c/transformed/jetified-column-tax-sdk-1.0.2/AndroidManifest.xml:9:13-11:79
+40                android:name="android.support.PARENT_ACTIVITY"
+40-->[com.columntax.columntaxsdk:column-tax-sdk:1.0.2] /Users/veronicashei/.gradle/caches/8.13/transforms/f0ed61556d7016d71d26eec6930c5d9c/transformed/jetified-column-tax-sdk-1.0.2/AndroidManifest.xml:10:17-63
+41                android:value="com.columntax.columntaxfile.WebViewActivity" />
+41-->[com.columntax.columntaxsdk:column-tax-sdk:1.0.2] /Users/veronicashei/.gradle/caches/8.13/transforms/f0ed61556d7016d71d26eec6930c5d9c/transformed/jetified-column-tax-sdk-1.0.2/AndroidManifest.xml:11:17-76
+42        </activity>
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+46            android:authorities="com.example.columnsdksample.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.3.0] /Users/veronicashei/.gradle/caches/8.13/transforms/520aeb990827eec14bb7cebb25c3dd61/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/veronicashei/.gradle/caches/8.13/transforms/a137b637a3a92c845c91002fd90525d8/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/veronicashei/.gradle/caches/8.13/transforms/a137b637a3a92c845c91002fd90525d8/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/veronicashei/.gradle/caches/8.13/transforms/a137b637a3a92c845c91002fd90525d8/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+55-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+56                android:value="androidx.startup" />
+56-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+57        </provider>
+58
+59        <receiver
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+60            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+61            android:directBootAware="false"
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+62            android:enabled="true"
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+63            android:exported="true"
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+64            android:permission="android.permission.DUMP" >
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+65            <intent-filter>
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+66                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+67            </intent-filter>
+68            <intent-filter>
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+69                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+70            </intent-filter>
+71            <intent-filter>
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+72                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+73            </intent-filter>
+74            <intent-filter>
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+75                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/veronicashei/.gradle/caches/8.13/transforms/7c27da0606c7bd67c9eeb8e36f122b99/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+76            </intent-filter>
+77        </receiver>
+78    </application>
+79
+80</manifest>
