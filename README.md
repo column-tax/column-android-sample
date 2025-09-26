@@ -42,7 +42,7 @@ This sample Android app demonstrates how to integrate the official Column Tax An
 ## Technical Details
 
 ### SDK Integration
-- **SDK Version**: `com.columntax.columntaxsdk:column-tax-sdk:1.0.2`
+- **SDK Version**: `com.columntax.columntaxsdk:column-tax-sdk:1.0.3`
 - **Main Class**: `ColumnTaxFileActivity` handles the entire tax filing flow
 - **Architecture**: Simple Activity-based integration with minimal setup
 
