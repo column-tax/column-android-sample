@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Column SDK Sample"
+rootProject.name = "Column Android Sample"
